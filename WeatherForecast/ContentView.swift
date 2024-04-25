@@ -19,6 +19,7 @@ struct ContentView: View {
             Text("Welcome to MyApp")
                 .font(.title)
                 .fontWeight(.semibold)
+                .padding(.top)
                 .border(.black, width: 1.5)
             
             Text("Description Text")
@@ -28,8 +29,6 @@ struct ContentView: View {
         .border(.orange, width: 1.5)
         .padding()
         .border(.purple, width: 1.5)
-        
-        
     }
 }
 
