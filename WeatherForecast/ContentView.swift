@@ -8,29 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
         HStack {
-            VStack {
-                Text("Miércoles")
-                Image(systemName: "sun.max.fill")
-                    .foregroundStyle(Color.yellow)
-                Text("Max: 27")
-                Text("Min: 19")
-            }
-            .padding()
+            DayForecast(day: "Miércoles")
             
-            VStack {
-                Text("Jueves")
-                Image(systemName: "cloud.rain.fill")
-                    .foregroundStyle(Color.blue)
-                Text("Max: 32")
-                Text("Min: 20")
-            }
-            .padding()
+            DayForecast(day: "Jueves")
         }
     }
 }
 
 #Preview {
     ContentView()
+}
+
+struct DayForecast: View {
+    let day: String
+    
+    var body: some View {
+        VStack {
+            Text(day)
+            Image(systemName: "sun.max.fill")
+                .foregroundStyle(Color.yellow)
+            Text("Max: 27")
+            Text("Min: 19")
+        }
+        .padding()
+    }
 }
