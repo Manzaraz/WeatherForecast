@@ -13,6 +13,7 @@
 		61AA22E02BDAAED500FA9334 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61AA22DF2BDAAED500FA9334 /* Preview Assets.xcassets */; };
 		61F74ABE2BDB12EE006EFD5C /* FeaturesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F74ABD2BDB12EE006EFD5C /* FeaturesPage.swift */; };
 		61F74AC02BDB132B006EFD5C /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F74ABF2BDB132B006EFD5C /* FeatureCard.swift */; };
+		61F74AC42BDB2226006EFD5C /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F74AC32BDB2226006EFD5C /* WelcomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		61AA22DF2BDAAED500FA9334 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61F74ABD2BDB12EE006EFD5C /* FeaturesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesPage.swift; sourceTree = "<group>"; };
 		61F74ABF2BDB132B006EFD5C /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
+		61F74AC32BDB2226006EFD5C /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				61AA22DA2BDAAED300FA9334 /* ContentView.swift */,
+				61F74AC32BDB2226006EFD5C /* WelcomePage.swift */,
 				61F74AC22BDB20C7006EFD5C /* Features */,
 			);
 			path = Views;
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F74AC42BDB2226006EFD5C /* WelcomePage.swift in Sources */,
 				61F74ABE2BDB12EE006EFD5C /* FeaturesPage.swift in Sources */,
 				61AA22DB2BDAAED300FA9334 /* ContentView.swift in Sources */,
 				61F74AC02BDB132B006EFD5C /* FeatureCard.swift in Sources */,
