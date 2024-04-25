@@ -12,9 +12,9 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-            DayForecast(day: "Miércoles")
+            DayForecast(day: "Miércoles", isRainy: false,max: 27, min: 15)
             
-            DayForecast(day: "Jueves")
+            DayForecast(day: "Jueves", isRainy: true,max: 30, min: 19)
         }
     }
 }
@@ -25,14 +25,25 @@ struct ContentView: View {
 
 struct DayForecast: View {
     let day: String
+    let isRainy: Bool
+    let max: Int
+    let min: Int
+    
+    var iconName: String {
+        return isRainy ? "cloud.rain.fill" : "sun.max.fill"
+    }
+    
+    var iconColor: Color {
+        return isRainy ? Color.blue : Color.yellow
+    }
     
     var body: some View {
         VStack {
             Text(day)
-            Image(systemName: "sun.max.fill")
-                .foregroundStyle(Color.yellow)
-            Text("Max: 27")
-            Text("Min: 19")
+            Image(systemName: iconName)
+                .foregroundStyle(iconColor)
+            Text("Max: \(max)")
+            Text("Min: \(min)")
         }
         .padding()
     }
