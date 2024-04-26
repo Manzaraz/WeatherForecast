@@ -86,8 +86,8 @@
 		61F74AC22BDB20C7006EFD5C /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				61F74ABF2BDB132B006EFD5C /* FeatureCard.swift */,
 				61F74ABD2BDB12EE006EFD5C /* FeaturesPage.swift */,
+				61F74ABF2BDB132B006EFD5C /* FeatureCard.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
